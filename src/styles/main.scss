@@ -1,0 +1,95 @@
+body {
+  background-color: white;
+  padding: 15px 20px 10px 20px;
+  margin-top: 5px;
+}
+
+.tag {
+  background-color: #e8e9e9;
+  border-radius: 5px;
+  padding: 3px 7px;
+  margin-right: 10px;
+}
+
+table {
+  border-collapse: collapse;
+
+  tr {
+    td {
+      padding: 0 0px;
+    }
+  }
+
+  th {
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #999;
+
+    &:nth-child(1) {
+      min-width: 170px;
+    }
+  }
+}
+
+.delete {
+  color: rgb(180, 0, 0);
+}
+
+.button {
+  border: 0;
+  background-color: black;
+  color: white;
+  display: inline-block;
+  padding: 11px 19px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  p {
+    margin: 0px;
+  }
+
+  &:hover {
+    background-color: #111;
+    p {
+      color: #dddddd;
+    }
+  }
+}
+
+.button-text {
+  cursor: pointer;
+}
+
+.mh-10 {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+form {
+  .form-control {
+    margin-bottom: 10px;
+    display: flex;
+    label {
+      min-width: 120px;
+      display: inline-block;
+    }
+    input {
+      padding: 6px 8px;
+      text-align: right;
+      width: 100px;
+    }
+    textarea {
+      padding: 6px 8px;
+    }
+  }
+  .button {
+    margin-left: 120px;
+  }
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
