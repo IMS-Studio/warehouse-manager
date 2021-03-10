@@ -6,7 +6,7 @@ import { AddWarehouse } from "../redux/warehouse/actions";
 
 const NewWarehouse = ({ addWarehouse }) => {
   const history = useHistory();
-  const [id, setId] = useState();
+  const [id, setId] = useState(0);
   const [zipCodes, setZipCodes] = useState("");
 
   const onAdd = () => {
@@ -23,11 +23,7 @@ const NewWarehouse = ({ addWarehouse }) => {
       <form>
         <div className="form-control">
           <label>Warehouse id</label>
-          <input
-            value={id}
-            defaultValue={0}
-            onChange={(e) => setId(e.target.value)}
-          />
+          <input value={id} onChange={(e) => setId(e.target.value)} />
         </div>
         <div className="form-control">
           <label>Zip codes</label>

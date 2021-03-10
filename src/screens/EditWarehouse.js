@@ -6,7 +6,7 @@ import { UpdateWarehouse } from "../redux/warehouse/actions";
 
 const EditWarehouse = ({ warehouses, saveWarehouse }) => {
   const history = useHistory();
-  const [warehouseId, setWarehouseId] = useState();
+  const [warehouseId, setWarehouseId] = useState(0);
   const [zipCodes, setZipCodes] = useState("");
   const { id } = useParams();
 
@@ -28,7 +28,6 @@ const EditWarehouse = ({ warehouses, saveWarehouse }) => {
           <label>Warehouse id</label>
           <input
             value={warehouseId}
-            defaultValue={0}
             onChange={(e) => setWarehouseId(e.target.value)}
           />
         </div>
